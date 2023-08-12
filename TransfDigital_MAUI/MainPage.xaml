@@ -3,26 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TransfDigital_MAUI.MainPage">
 
-    <Grid Padding="20" RowSpacing="10" RowDefinitions="50,50,*">
+    <StackLayout Spacing="1" x:Name="stack" Orientation="Horizontal" Margin="0,50,0,0">
 
-        <HorizontalStackLayout Grid.Row="0" Spacing="10">
-            <Label Text="Horizontal" VerticalOptions="Center" />
-            <Button Text="Start"  Clicked="OnHorizontalStartClicked"  />
-            <Button Text="Center" Clicked="OnHorizontalCenterClicked" />
-            <Button Text="End"    Clicked="OnHorizontalEndClicked"    />
-            <Button Text="Fill"   Clicked="OnHorizontalFillClicked"   />
-        </HorizontalStackLayout>
+        <BoxView Color="White" HeightRequest="40" WidthRequest="40"></BoxView>
+        <BoxView Color="Blue" HeightRequest="40" WidthRequest="40"></BoxView>
+        <BoxView Color="Yellow" HeightRequest="40" WidthRequest="40"></BoxView>
 
-        <HorizontalStackLayout  Grid.Row="1" Spacing="10">
-            <Label Text="Vertical" VerticalOptions="Center" />
-            <Button Text="Start"  Clicked="OnVerticalStartClicked"  />
-            <Button Text="Center" Clicked="OnVerticalCenterClicked" />
-            <Button Text="End"    Clicked="OnVerticalEndClicked"    />
-            <Button Text="Fill"   Clicked="OnVerticalFillClicked"   />
-        </HorizontalStackLayout>
-
-        <Label Grid.Row="2" FontSize="25" x:Name="target" BackgroundColor="Silver" Text="Hello" />
-
-    </Grid>
+    </StackLayout>
 
 </ContentPage>
